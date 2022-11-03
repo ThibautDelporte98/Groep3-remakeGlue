@@ -10774,11 +10774,13 @@ textarea.form-control-lg {
 }
 .c-footer {
   background-color: #343434;
-  font-size: 0.9rem;
-  height: 310px;
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
 }
 .c-footer__nav--title {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 700;
   color: white;
   margin-top: 5rem;
 }
@@ -10820,11 +10822,18 @@ textarea.form-control-lg {
 .c-footer__button {
   margin-top: 7.13rem;
   margin-left: 0.8rem;
-  width: 5rem;
+  width: 6rem;
   height: 2.75rem;
   border: none;
   background-color: #F62822;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 7px;
+  transition: 0.5s ease;
+}
+.c-footer__button:hover {
+  background-color: #343434;
+  border: 2px solid #F62822;
+  transition: 0.2s ease-in-out;
 }
 
 .form-floating {
@@ -10832,8 +10841,9 @@ textarea.form-control-lg {
   flex-direction: row;
 }
 .form-control {
-  margin-top: 0.8rem;
+  margin-top: 0.64rem;
   height: 2.75rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 7px;
 }
 
 * {

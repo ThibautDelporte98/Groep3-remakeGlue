@@ -1,62 +1,75 @@
-.c-footer{
-    background-color: $component-background;
-    font-size: 0.9rem;
-    height: 310px;
-    &__nav--title{
-        font-size: 0.9rem;
-        color: $text-color;
-        margin-top: 5rem;
+.c-footer {
+  background-color: $component-background;
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  &__nav--title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $text-color;
+    margin-top: 5rem;
+  }
+  &__nav--link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: $text-color;
+  }
+  &__input {
+    width: 25rem;
+  }
+  &__form {
+    display: flex;
+    flex-direction: row;
+  }
+  &__logo {
+    margin-top: 5rem;
+  }
+  &__nav--instagram {
+    color: white;
+    margin-right: 0.2rem;
+  }
+  &__nav--facebook {
+    color: white;
+  }
+  &__copyright {
+    margin-top: 3.5rem;
+    text-align: center;
+    color: $text-color;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  &__adress {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+  }
+  &__button {
+    margin-top: 7.13rem;
+    margin-left: 0.8rem;
+    width: 6rem;
+    height: 2.75rem;
+    border: none;
+    background-color: $button-background-color;
+    color: $text-color;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 7px;
+    transition:0.5s ease;
+    &:hover{
+       background-color: $component-background;
+       border: 2px solid $button-background-color;
+       transition: 0.2s ease-in-out;
     }
-    &__nav--link{
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        color: $text-color;
-    }
-    &__input{
-        width: 25rem;
-    }
-    &__form{
-        display: flex;
-        flex-direction: row;
-    }&__logo{
-        margin-top: 5rem;
-
-    }&__nav--instagram{
-        color: white;
-        margin-right: 0.2rem;
-    }&__nav--facebook{
-        color: white;
-    }
-    &__copyright{
-        margin-top: 3.5rem;
-        text-align: center;
-        color: $text-color;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    &__adress{
-        text-align: center;
-        color: gray;
-        font-size: 12px;
-    }&__button{
-        margin-top: 7.13rem;
-        margin-left: 0.8rem;
-        width: 5rem;
-        height: 2.75rem;
-        border: none;
-        background-color:$button-background-color ;
-        color: $text-color;
-    }
+  }
 }
 
-.form{
-    &-floating{
-        display: flex;
-        flex-direction: row;
-    }
-    &-control{margin-top: 0.8rem;
-        height: 2.75rem;
-    }
+.form {
+  &-floating {
+    display: flex;
+    flex-direction: row;
+  }
+  &-control {
+    margin-top: 0.64rem;
+    height: 2.75rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 7px;
+  }
 }
-
