@@ -10774,8 +10774,74 @@ textarea.form-control-lg {
 }
 .c-footer {
   background-color: #343434;
+  font-size: 0.9rem;
+  height: 310px;
+}
+.c-footer__nav--title {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 5rem;
+}
+.c-footer__nav--link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
   color: white;
 }
-.c-footer__nav1 {
-  margin-left: 3rem;
+.c-footer__input {
+  width: 25rem;
+}
+.c-footer__form {
+  display: flex;
+  flex-direction: row;
+}
+.c-footer__logo {
+  margin-top: 5rem;
+}
+.c-footer__nav--instagram {
+  color: white;
+  margin-right: 0.2rem;
+}
+.c-footer__nav--facebook {
+  color: white;
+}
+.c-footer__copyright {
+  margin-top: 3.5rem;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.c-footer__adress {
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+}
+.c-footer__button {
+  margin-top: 7.13rem;
+  margin-left: 0.8rem;
+  width: 5rem;
+  height: 2.75rem;
+  border: none;
+  background-color: #F62822;
+  color: white;
+}
+
+.form-floating {
+  display: flex;
+  flex-direction: row;
+}
+.form-control {
+  margin-top: 0.8rem;
+  height: 2.75rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 1rem;
+  background-color: #1D1D1D;
 }
