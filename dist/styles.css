@@ -10774,15 +10774,13 @@ textarea.form-control-lg {
 }
 .c-footer {
   background-color: #343434;
-  font-size: 1rem;
-  height: 100%;
-  width: 100%;
+  font-size: 0.9rem;
 }
 .c-footer__nav--title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  color: white;
   margin-top: 5rem;
+  color: white;
 }
 .c-footer__nav--link {
   display: flex;
@@ -10791,7 +10789,22 @@ textarea.form-control-lg {
   color: white;
 }
 .c-footer__input {
-  width: 25rem;
+  width: 27rem;
+}
+@media (max-width: 1399.98px) {
+  .c-footer__input {
+    width: 22.5rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c-footer__input {
+    width: 18rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .c-footer__input {
+    width: 22.5rem;
+  }
 }
 .c-footer__form {
   display: flex;
@@ -10803,6 +10816,7 @@ textarea.form-control-lg {
 .c-footer__nav--instagram {
   color: white;
   margin-right: 0.2rem;
+  text-decoration: none;
 }
 .c-footer__nav--facebook {
   color: white;
@@ -10822,18 +10836,16 @@ textarea.form-control-lg {
 .c-footer__button {
   margin-top: 7.13rem;
   margin-left: 0.8rem;
-  width: 6rem;
+  width: 5rem;
   height: 2.75rem;
   border: none;
   background-color: #F62822;
   color: white;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 7px;
-  transition: 0.5s ease;
 }
 .c-footer__button:hover {
+  border-color: red;
   background-color: #343434;
-  border: 2px solid #F62822;
-  transition: 0.2s ease-in-out;
+  transform: 2s ease;
 }
 
 .form-floating {
@@ -10841,9 +10853,8 @@ textarea.form-control-lg {
   flex-direction: row;
 }
 .form-control {
-  margin-top: 0.64rem;
+  margin-top: 0.8rem;
   height: 2.75rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 7px;
 }
 
 * {
