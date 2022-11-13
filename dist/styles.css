@@ -10779,6 +10779,7 @@ textarea.form-control-lg {
 .c-footer__nav--title {
   font-size: 0.9rem;
   font-weight: 700;
+
   margin-top: 5rem;
   color: white;
 }
@@ -10865,6 +10866,7 @@ textarea.form-control-lg {
   font-size: 0.9rem;
   font-weight: 700;
   margin-top: 5rem;
+  color: white;
 }
 .c-footer__nav--link {
   display: flex;
