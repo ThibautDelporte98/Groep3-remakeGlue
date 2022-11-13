@@ -10779,6 +10779,92 @@ textarea.form-control-lg {
 .c-footer__nav--title {
   font-size: 0.9rem;
   font-weight: 700;
+
+  margin-top: 5rem;
+  color: white;
+}
+.c-footer__nav--link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+}
+.c-footer__input {
+  width: 27rem;
+}
+@media (max-width: 1399.98px) {
+  .c-footer__input {
+    width: 22.5rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c-footer__input {
+    width: 18rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .c-footer__input {
+    width: 22.5rem;
+  }
+}
+.c-footer__form {
+  display: flex;
+  flex-direction: row;
+}
+.c-footer__logo {
+  margin-top: 5rem;
+}
+.c-footer__nav--instagram {
+  color: white;
+  margin-right: 0.2rem;
+  text-decoration: none;
+}
+.c-footer__nav--facebook {
+  color: white;
+}
+.c-footer__copyright {
+  margin-top: 3.5rem;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.c-footer__adress {
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+}
+.c-footer__button {
+  margin-top: 7.13rem;
+  margin-left: 0.8rem;
+  width: 5rem;
+  height: 2.75rem;
+  border: none;
+  background-color: #F62822;
+  color: white;
+}
+.c-footer__button:hover {
+  border-color: red;
+  background-color: #343434;
+  transform: 2s ease;
+}
+
+.form-floating {
+  display: flex;
+  flex-direction: row;
+}
+.form-control {
+  margin-top: 0.8rem;
+  height: 2.75rem;
+}
+
+.c-footer {
+  background-color: #343434;
+  font-size: 0.9rem;
+}
+.c-footer__nav--title {
+  font-size: 0.9rem;
+  font-weight: 700;
   margin-top: 5rem;
   color: white;
 }
@@ -10932,6 +11018,27 @@ textarea.form-control-lg {
   margin-right: 0.5rem;
   border-radius: 0.3125rem;
   height: 15.25rem;
+  margin-top: 0.5rem;
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .c-getuigenissen__content {
+    height: 17.25rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c-getuigenissen__content {
+    height: 19rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .c-getuigenissen__content {
+    height: 16.25rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .c-getuigenissen__content {
+    height: 17.25rem;
+  }
 }
 .c-getuigenissen__img {
   position: relative;
@@ -10962,10 +11069,59 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 18px;
 }
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .c-getuigenissen__txt {
+    top: 0;
+    max-width: 75%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c-getuigenissen__txt {
+    top: 0;
+    max-width: 70%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .c-getuigenissen__txt {
+    top: -0.8rem;
+    width: 75%;
+  }
+}
+@media (max-width: 575.98px) {
+  .c-getuigenissen__txt {
+    top: -0.3rem;
+    max-width: 75%;
+  }
+}
 .c-getuigenissen__rating {
   position: relative;
   top: -13.5rem;
   left: 67%;
+  width: 8rem;
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .c-getuigenissen__rating {
+    top: -12rem;
+    left: 6.2rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c-getuigenissen__rating {
+    top: -13rem;
+    left: 6.2rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .c-getuigenissen__rating {
+    top: -11rem;
+    left: 6.2rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .c-getuigenissen__rating {
+    top: -11rem;
+    left: 6.2rem;
+  }
 }
 .c-getuigenissen__button {
   position: relative;
@@ -10977,15 +11133,86 @@ textarea.form-control-lg {
   border-radius: 50%;
   background-image: linear-gradient(to top, #0f40f4, #f512cc, #f62a14);
 }
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .c-getuigenissen__button {
+    bottom: 0;
+    left: 87%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c-getuigenissen__button {
+    bottom: -0.5rem;
+    left: 87%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .c-getuigenissen__button {
+    bottom: 0;
+    left: 87%;
+  }
+}
+@media (max-width: 575.98px) {
+  .c-getuigenissen__button {
+    bottom: 0;
+    left: 87%;
+  }
+}
 .c-getuigenissen__quoteleft {
   position: relative;
   top: -0.6rem;
   left: 2.7rem;
 }
+@media (max-width: 575.98px) {
+  .c-getuigenissen__quoteleft {
+    top: 0.5rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .c-getuigenissen__quoteleft {
+    top: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c-getuigenissen__quoteleft {
+    top: 0.9rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .c-getuigenissen__quoteleft {
+    top: 0.9rem;
+  }
+}
 .c-getuigenissen__quoteright {
   position: relative;
   bottom: 2.5rem;
   left: 14.7rem;
+}
+@media (max-width: 575.98px) {
+  .c-getuigenissen__quoteright {
+    top: -1rem;
+    left: 7.2rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .c-getuigenissen__quoteright {
+    top: -2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .c-getuigenissen__quoteright {
+    left: 10.2rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .c-getuigenissen__quoteright {
+    top: -0.9rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .c-getuigenissen__quoteright {
+    top: -0.9rem;
+    left: 10.2rem;
+  }
 }
 
 .flex-container {
@@ -10994,6 +11221,13 @@ textarea.form-control-lg {
   justify-content: space-around;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+@media (max-width: 575.98px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .flex-container {
@@ -11008,6 +11242,22 @@ textarea.form-control-lg {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.c-button__more {
+  width: 11rem;
+  height: 2.3rem;
+  margin: auto;
+  margin-bottom: 8rem;
+  border: none;
+  background-color: #F62822;
+  color: white;
+  border-radius: 10px;
+}
+.c-button__more:hover {
+  border: 2px solid #F62822;
+  background-color: #1D1D1D;
+  transition: 0.4s ease;
 }
 
 .bi {
