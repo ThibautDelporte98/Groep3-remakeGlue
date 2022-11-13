@@ -33,6 +33,7 @@
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
     "run": "^1.4.0",
-    "start": "^5.1.0"
+    "start": "^5.1.0",
+    "live-server": "^1.2.2"
   }
 }
