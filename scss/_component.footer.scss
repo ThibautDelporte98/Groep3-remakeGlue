@@ -1,11 +1,11 @@
 .c-footer{
     background-color: $component-background;
     font-size: 0.9rem;
-    height: 310px;
     &__nav--title{
         font-size: 0.9rem;
-        color: $text-color;
+        font-weight: 700;
         margin-top: 5rem;
+        color: $text-color;
     }
     &__nav--link{
         display: flex;
@@ -14,7 +14,17 @@
         color: $text-color;
     }
     &__input{
-        width: 25rem;
+        width: 27rem;
+
+        @include media-breakpoint-down("xxl"){
+            width: 22.5rem;
+        }        
+        @include media-breakpoint-only("lg"){
+            width: 18rem;
+        }
+        @include media-breakpoint-only("md"){
+        width: 22.5rem;
+        }
     }
     &__form{
         display: flex;
@@ -25,6 +35,7 @@
     }&__nav--instagram{
         color: white;
         margin-right: 0.2rem;
+        text-decoration: none;
     }&__nav--facebook{
         color: white;
     }
@@ -47,6 +58,89 @@
         border: none;
         background-color:$button-background-color ;
         color: $text-color;
+        &:hover{
+            border-color: red;
+            background-color: $component-background;
+            transform:2s ease ;
+        }
+
+    }
+}
+
+.form{
+    &-floating{
+        display: flex;
+        flex-direction: row;
+    }
+    &-control{margin-top: 0.8rem;
+        height: 2.75rem;
+    }
+
+}.c-footer{
+    background-color: $component-background;
+    font-size: 0.9rem;
+    &__nav--title{
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-top: 5rem;
+    }
+    &__nav--link{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: $text-color;
+    }
+    &__input{
+        width: 27rem;
+
+        @include media-breakpoint-down("xxl"){
+            width: 22.5rem;
+        }        
+        @include media-breakpoint-only("lg"){
+            width: 18rem;
+        }
+        @include media-breakpoint-only("md"){
+        width: 22.5rem;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: row;
+    }&__logo{
+        margin-top: 5rem;
+
+    }&__nav--instagram{
+        color: white;
+        margin-right: 0.2rem;
+        text-decoration: none;
+    }&__nav--facebook{
+        color: white;
+    }
+    &__copyright{
+        margin-top: 3.5rem;
+        text-align: center;
+        color: $text-color;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    &__adress{
+        text-align: center;
+        color: gray;
+        font-size: 12px;
+    }&__button{
+        margin-top: 7.13rem;
+        margin-left: 0.8rem;
+        width: 5rem;
+        height: 2.75rem;
+        border: none;
+        background-color:$button-background-color ;
+        color: $text-color;
+        &:hover{
+            border-color: red;
+            background-color: $component-background;
+            transform:2s ease ;
+        }
+
     }
 }
 
@@ -59,4 +153,3 @@
         height: 2.75rem;
     }
 }
-
