@@ -1,22 +1,41 @@
-.c-header{
-    &__content{
+.c-header {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header_background_glue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 45rem;
+
+    @include media-breakpoint-down(lg) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header_background_glue.png);
+    }
+
+    &__content {
         padding-right: 5rem;
+
         @include media-breakpoint-down(lg) {
             padding-right: 2rem;
             padding-left: 2rem;
-            }
+        }
     }
-    &__title{
+
+    &__title {
         @include media-breakpoint-down(lg) {
             font-size: 2.5rem;
         }
     }
-    &__text{
+
+    &__text {
         font-weight: 300;
         font-size: 1.2rem;
         margin-bottom: 3rem;
     }
-    &__bolt{
+
+    &__bolt {
         font-weight: 700;
         border-bottom: 0.1rem solid #F62822;
     }

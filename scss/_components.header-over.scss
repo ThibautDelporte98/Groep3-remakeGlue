@@ -1,0 +1,39 @@
+.c-header-over {
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 4rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            
+        }
+    }
+
+    &__title {
+        @include media-breakpoint-down(lg) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+
+    &__bolt {
+        font-weight: 700;
+        border-bottom: 0.1rem solid #F62822;
+    }
+
+    &__img{
+            @include media-breakpoint-down(lg) {
+                    margin-left: -2rem;
+                }
+    }
+
+}

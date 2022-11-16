@@ -17,20 +17,7 @@ a {
 }
 
 header {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header_background_glue.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 45rem;
     color: #ffff;
-    margin-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @include media-breakpoint-down(lg) {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header_background_glue.png);
-    }
 }
 
 
