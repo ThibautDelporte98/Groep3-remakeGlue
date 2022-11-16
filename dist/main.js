@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){for(var n=document.querySelector(".cases__header--txt"),e=0;e<n.length;e++){var t=n[e];t.innerHTML="<span>"+t.innerHTML.split(" ").join("</span><span>")+"</span>"}}));
