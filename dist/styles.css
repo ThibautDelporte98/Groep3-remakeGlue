@@ -11280,6 +11280,7 @@ body {
   font-family: "Figtree", sans-serif;
   font-size: 1rem;
   background-color: #1D1D1D;
+  color: white;
 }
 
 a {
@@ -11472,6 +11473,61 @@ h1, .h1 {
   opacity: 0;
   transition-duration: 0.5s;
 }
+
+
+.c-introductie {
+  margin-bottom: 9.75rem;
+}
+.c-introductie__card {
+  background: #343434;
+  border-radius: 20px;
+  margin-right: -5rem;
+}
+@media (max-width: 1199.98px) {
+  .c-introductie__card {
+    margin-right: 0;
+  }
+}
+.c-introductie__title {
+  margin-bottom: 3rem;
+}
+.c-introductie__img {
+  border-radius: 1.25rem;
+  margin-left: -8rem;
+  margin-top: 6rem;
+  height: 26rem;
+  margin-right: -6rem;
+}
+@media (max-width: 1199.98px) {
+  .c-introductie__img {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 2rem;
+    height: auto;
+  }
+}
+.c-introductie__subtitel {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+  padding-top: 2.5rem;
+}
+.c-introductie__text {
+  padding-left: 3rem;
+  padding-right: 15rem;
+  padding-bottom: 1.5rem;
+  font-weight: lighter;
+}
+@media (max-width: 1199.98px) {
+  .c-introductie__text {
+    padding-right: 3rem;
+  }
+}
+.c-introductie__text--accent {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: red;
 
 .c-header__content {
   padding-right: 5rem;
