@@ -11474,7 +11474,6 @@ h1, .h1 {
   transition-duration: 0.5s;
 }
 
-
 .c-introductie {
   margin-bottom: 9.75rem;
 }
@@ -11528,6 +11527,7 @@ h1, .h1 {
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: red;
+}
 
 .c-header__content {
   padding-right: 5rem;
