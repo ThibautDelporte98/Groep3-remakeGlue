@@ -11288,22 +11288,7 @@ a {
 }
 
 header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header_background_glue.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 45rem;
   color: white;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@media (max-width: 991.98px) {
-  header {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header_background_glue.png);
-  }
 }
 
 h1, .h1 {
@@ -11336,7 +11321,7 @@ h1, .h1 {
   position: sticky;
   top: 2;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0rem 0.01rem 3rem #F62822;
+  box-shadow: 0rem 0.01rem 1rem #F62822;
 }
 .c-nav__list {
   display: flex;
@@ -11473,6 +11458,23 @@ h1, .h1 {
   transition-duration: 0.5s;
 }
 
+.c-header {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header_background_glue.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 45rem;
+}
+@media (max-width: 991.98px) {
+  .c-header {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header_background_glue.png);
+  }
+}
 .c-header__content {
   padding-right: 5rem;
 }
@@ -11511,7 +11513,7 @@ h1, .h1 {
   left: 19.5px;
   display: block;
   border-radius: 28px;
-  background: linear-gradient(180deg, rgb(246, 40, 34) 0%, rgb(245, 27, 203) 52%, rgb(25, 62, 242) 100%);
+  background: linear-gradient(90deg, rgb(246, 40, 34) 0%, rgb(245, 27, 203) 52%, rgb(25, 62, 242) 100%);
   width: 40px;
   height: 40px;
   transition: all 0.3s ease;
@@ -11545,4 +11547,36 @@ h1, .h1 {
 }
 .c-btn:active {
   transform: scale(0.96);
+}
+
+.c-header-over__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991.98px) {
+  .c-header-over__content {
+    margin-top: 4rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .c-header-over__title {
+    font-size: 2.5rem;
+  }
+}
+.c-header-over__text {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.c-header-over__bolt {
+  font-weight: 700;
+  border-bottom: 0.1rem solid #F62822;
+}
+@media (max-width: 991.98px) {
+  .c-header-over__img {
+    margin-left: -2rem;
+  }
 }
