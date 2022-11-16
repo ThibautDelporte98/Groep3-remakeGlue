@@ -1,0 +1,57 @@
+.c-introductie{
+    margin-bottom: 9.75rem;
+    
+    &__card{
+        
+        background: $color-component-background;
+        border-radius: 20px;
+        margin-right: -5rem;
+        
+        @include media-breakpoint-down(xl) {
+            margin-right: 0;
+            
+          }
+        
+    }
+    &__title{
+        margin-bottom: 3rem;
+    }
+
+    &__img{
+    border-radius: 1.25rem;
+    margin-left: -8rem;
+    margin-top: 6rem;
+    height: 26rem;
+    
+    margin-right: -6rem;
+    @include media-breakpoint-down(xl) {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        margin-top: 2rem;
+        height: auto;
+        
+      }
+    }
+    &__subtitel{
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 1.5rem;
+        padding-top: 2.5rem;
+    }
+    &__text{
+        padding-left: 3rem;
+        padding-right: 15rem;
+        padding-bottom: 1.5rem;
+        font-weight: lighter;
+        @include media-breakpoint-down(xl) {
+            padding-right: 3rem;
+            
+          }
+        &--accent{
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: $color-red;
+        }
+    }
+}

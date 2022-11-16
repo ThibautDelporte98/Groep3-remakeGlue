@@ -9,5 +9,22 @@ body{
     font-family: 'Figtree', sans-serif;
     font-size: 1rem;
     background-color:#1D1D1D;
+    color: $color-text;
 }
 
+a {
+    text-decoration: none;
+    transition: all .3s ease
+}
+
+header {
+    color: #ffff;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2em;
+    margin-bottom: 2rem;
+    
+}
