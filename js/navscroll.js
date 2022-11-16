@@ -11,6 +11,7 @@ const navScroll = () => {
             nav.classList.remove("c-nav--active");
         }
     });
+    console.log("pain")
 
 }
 

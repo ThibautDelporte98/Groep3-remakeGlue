@@ -10779,7 +10779,6 @@ textarea.form-control-lg {
 .c-footer__nav--title {
   font-size: 0.9rem;
   font-weight: 700;
-
   margin-top: 5rem;
   color: white;
 }
@@ -10866,7 +10865,6 @@ textarea.form-control-lg {
   font-size: 0.9rem;
   font-weight: 700;
   margin-top: 5rem;
-  color: white;
 }
 .c-footer__nav--link {
   display: flex;
@@ -11284,12 +11282,42 @@ body {
   background-color: #1D1D1D;
 }
 
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header_background_glue.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 45rem;
+  color: white;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 991.98px) {
+  header {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header_background_glue.png);
+  }
+}
+
+h1, .h1 {
+  font-size: 3.5rem;
+  line-height: 1.2em;
+  margin-bottom: 2rem;
+}
+
 .c-logo {
   font-size: 2.2rem;
   text-transform: capitalize;
   font-weight: 400;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 @media (max-width: 991.98px) {
   .c-logo {
@@ -11443,4 +11471,78 @@ body {
 .c-nav__toggle:checked ~ .c-nav__bar--mid {
   opacity: 0;
   transition-duration: 0.5s;
+}
+
+.c-header__content {
+  padding-right: 5rem;
+}
+@media (max-width: 991.98px) {
+  .c-header__content {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .c-header__title {
+    font-size: 2.5rem;
+  }
+}
+.c-header__text {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.c-header__bolt {
+  font-weight: 700;
+  border-bottom: 0.1rem solid #F62822;
+}
+
+.c-btn {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  z-index: 5;
+}
+.c-btn:before {
+  content: "";
+  position: absolute;
+  top: 9.5px;
+  left: 19.5px;
+  display: block;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgb(246, 40, 34) 0%, rgb(245, 27, 203) 52%, rgb(25, 62, 242) 100%);
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+.c-btn__text {
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 18px;
+  font-weight: 300;
+  vertical-align: middle;
+  color: white;
+}
+.c-btn__svg {
+  position: relative;
+  top: 0;
+  margin-right: 20px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #FFFFFF;
+  stroke-width: 1;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.c-btn:hover:before {
+  width: 11rem;
+  background: linear-gradient(90deg, rgb(246, 40, 34) 0%, rgb(245, 27, 203) 52%, rgb(25, 62, 242) 100%);
+}
+.c-btn:hover svg {
+  transform: translateX(0);
+}
+.c-btn:active {
+  transform: scale(0.96);
 }
