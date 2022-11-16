@@ -1,11 +1,12 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;500;600;800;900&display=swap");
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11280,6 +11281,7 @@ body {
   font-family: "Figtree", sans-serif;
   font-size: 1rem;
   background-color: #1D1D1D;
+  color: white;
 }
 
 a {
@@ -11475,6 +11477,63 @@ h1, .h1 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header_background_glue.png);
   }
 }
+
+.c-introductie {
+  margin-bottom: 9.75rem;
+}
+.c-introductie__card {
+  background: #343434;
+  border-radius: 20px;
+  margin-right: -5rem;
+}
+@media (max-width: 1199.98px) {
+  .c-introductie__card {
+    margin-right: 0;
+  }
+}
+.c-introductie__title {
+  margin-bottom: 3rem;
+}
+.c-introductie__img {
+  border-radius: 1.25rem;
+  margin-left: -8rem;
+  margin-top: 6rem;
+  height: 26rem;
+  margin-right: -6rem;
+}
+@media (max-width: 1199.98px) {
+  .c-introductie__img {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 2rem;
+    height: auto;
+  }
+}
+.c-introductie__subtitel {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+  padding-top: 2.5rem;
+}
+.c-introductie__text {
+  padding-left: 3rem;
+  padding-right: 15rem;
+  padding-bottom: 1.5rem;
+  font-weight: lighter;
+}
+@media (max-width: 1199.98px) {
+  .c-introductie__text {
+    padding-right: 3rem;
+  }
+}
+.c-introductie__text--accent {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #F62822;
+}
+
+
 .c-header__content {
   padding-right: 5rem;
 }
