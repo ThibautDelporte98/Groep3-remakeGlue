@@ -1,11 +1,11 @@
 .c-nav {
-  background-color: #343434;
+  background-color: $color-component-background;
   padding: 2rem 0;
   width: 100%;
   position: sticky;
   top: 2;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0rem 0.01rem 3rem #F62822;
+  box-shadow: 0rem 0.01rem 3rem $color-red;
 
   &__list {
     display: flex;
@@ -52,7 +52,7 @@
     z-index: 50;
 
     &--active {
-      border-bottom: 0.1rem solid #F62822;
+      border-bottom: 0.1rem solid $color-red;
       font-weight: 900;
     }
 
@@ -75,7 +75,7 @@
     display: block;
     width: 0;
     height: 0.1rem ;
-    background: #F62822;
+    background: $color-red;
     transition: width .3s;
   }
 
@@ -100,7 +100,7 @@
     width: 2rem;
     height: 0.2rem;
     margin-bottom: 0.3rem;
-    background-color: #F62822;
+    background-color: $color-red;
     border-radius: 0.2rem;
 
     @include media-breakpoint-up(lg) {

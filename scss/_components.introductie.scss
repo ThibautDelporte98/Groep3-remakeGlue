@@ -3,7 +3,7 @@
     
     &__card{
         
-        background: $component-background;
+        background: $color-component-background;
         border-radius: 20px;
         margin-right: -5rem;
         
@@ -51,7 +51,7 @@
         &--accent{
             font-weight: bold;
             text-decoration: underline;
-            text-decoration-color: red;
+            text-decoration-color: $color-red;
         }
     }
 }
