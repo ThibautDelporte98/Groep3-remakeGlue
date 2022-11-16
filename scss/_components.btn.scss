@@ -1,0 +1,60 @@
+
+
+
+.c-btn {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+    z-index: 5;
+
+
+&:before {
+    content: "";
+    position: absolute;
+    top: 9.5px;
+    left: 19.5px;
+    display: block;
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(246, 40, 34, 1) 0%, rgba(245, 27, 203, 1) 52%, rgba(25, 62, 242, 1) 100%);
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+
+}
+
+&__text {
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 18px;
+    font-weight: 300;
+    vertical-align: middle;
+    color: white;
+}
+
+&__svg {
+    position: relative;
+    top: 0;
+    margin-right: 20px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #FFFFFF;
+    stroke-width: 1;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+&:hover:before {
+    width: 11rem;
+    background: linear-gradient(90deg, rgba(246, 40, 34, 1) 0%, rgba(245, 27, 203, 1) 52%, rgba(25, 62, 242, 1) 100%);
+}
+
+&:hover svg {
+    transform: translateX(0);
+}
+
+&:active {
+    transform: scale(0.96);
+}
+}
