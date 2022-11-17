@@ -6,8 +6,6 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11658,7 +11656,7 @@ textarea.form-control-lg {
 }
 .c-footer__nav--title {
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 5rem;
   color: #FAFAFA;
 }
@@ -11667,6 +11665,9 @@ textarea.form-control-lg {
   flex-direction: column;
   text-decoration: none;
   color: #FAFAFA;
+}
+.c-footer__nav--link:hover {
+  color: #F62822;
 }
 .c-footer__input {
   width: 27rem;
@@ -11694,12 +11695,12 @@ textarea.form-control-lg {
   margin-top: 5rem;
 }
 .c-footer__nav--instagram {
-  color: white;
+  color: #FAFAFA;
   margin-right: 0.2rem;
   text-decoration: none;
 }
 .c-footer__nav--facebook {
-  color: white;
+  color: #FAFAFA;
 }
 .c-footer__copyright {
   margin-top: 3.5rem;
@@ -11710,7 +11711,7 @@ textarea.form-control-lg {
 }
 .c-footer__adress {
   text-align: center;
-  color: gray;
+  color: #5E5E5E;
   font-size: 12px;
 }
 .c-footer__button {
@@ -11721,9 +11722,10 @@ textarea.form-control-lg {
   border: none;
   background-color: #F62822;
   color: #FAFAFA;
+  transition: 0.3s;
 }
 .c-footer__button:hover {
-  border-color: red;
+  border-color: #F62822;
   background-color: #343434;
   transform: 2s ease;
 }
@@ -11743,7 +11745,7 @@ textarea.form-control-lg {
 }
 .c-footer__nav--title {
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 5rem;
 }
 .c-footer__nav--link {
@@ -11778,12 +11780,12 @@ textarea.form-control-lg {
   margin-top: 5rem;
 }
 .c-footer__nav--instagram {
-  color: white;
+  color: #FAFAFA;
   margin-right: 0.2rem;
   text-decoration: none;
 }
 .c-footer__nav--facebook {
-  color: white;
+  color: #FAFAFA;
 }
 .c-footer__copyright {
   margin-top: 3.5rem;
@@ -11794,7 +11796,7 @@ textarea.form-control-lg {
 }
 .c-footer__adress {
   text-align: center;
-  color: gray;
+  color: #5E5E5E;
   font-size: 12px;
 }
 .c-footer__button {
@@ -11807,7 +11809,7 @@ textarea.form-control-lg {
   color: #FAFAFA;
 }
 .c-footer__button:hover {
-  border-color: red;
+  border-color: #F62822;
   background-color: #343434;
   transform: 2s ease;
 }
@@ -12170,7 +12172,7 @@ a {
 }
 
 header {
-  color: white;
+  color: #FAFAFA;
 }
 
 h1, .h1 {
@@ -12242,27 +12244,26 @@ h1, .h1 {
   margin-right: 0;
 }
 .c-nav__link {
-  color: #FFFFFF;
+  color: #FAFAFA;
   font-weight: 200;
   text-decoration: none;
   position: relative;
   z-index: 50;
 }
 .c-nav__link--active {
-  border-bottom: 0.1rem solid #F62822;
-  font-weight: 900;
+  font-weight: 700;
 }
 @media (max-width: 767.98px) {
   .c-nav__link {
-    color: white;
+    color: #FAFAFA;
   }
 }
 .c-nav__link:hover, .c-nav__link:active {
-  color: white !important;
+  color: #FAFAFA !important;
 }
 @media (max-width: 767.98px) {
   .c-nav__link:hover, .c-nav__link:active {
-    color: white !important;
+    color: #FAFAFA !important;
   }
 }
 .c-nav__link::after {
@@ -12374,7 +12375,7 @@ h1, .h1 {
 }
 .c-introductie__subtitel {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 1.5rem;
   padding-top: 2.5rem;
 }
@@ -12382,7 +12383,7 @@ h1, .h1 {
   padding-left: 3rem;
   padding-right: 15rem;
   padding-bottom: 1.5rem;
-  font-weight: lighter;
+  font-weight: 300;
 }
 @media (max-width: 1199.98px) {
   .c-introductie__text {
@@ -12390,7 +12391,7 @@ h1, .h1 {
   }
 }
 .c-introductie__text--accent {
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: underline;
   text-decoration-color: #F62822;
 }
@@ -12432,7 +12433,7 @@ h1, .h1 {
   margin-bottom: 3rem;
 }
 .c-header__bolt {
-  font-weight: 700;
+  font-weight: 600;
   border-bottom: 0.1rem solid #F62822;
 }
 
@@ -12461,7 +12462,7 @@ h1, .h1 {
   line-height: 18px;
   font-weight: 300;
   vertical-align: middle;
-  color: white;
+  color: #FAFAFA;
 }
 .c-btn__svg {
   position: relative;
@@ -12470,7 +12471,7 @@ h1, .h1 {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #FFFFFF;
+  stroke: #FAFAFA;
   stroke-width: 1;
   transform: translateX(-5px);
   transition: all 0.3s ease;
@@ -12509,7 +12510,7 @@ h1, .h1 {
   font-size: 1.2rem;
 }
 .c-header-over__bolt {
-  font-weight: 700;
+  font-weight: 600;
   border-bottom: 0.1rem solid #F62822;
 }
 .c-header-over__img {

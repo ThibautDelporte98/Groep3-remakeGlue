@@ -45,27 +45,27 @@
   }
 
   &__link {
-    color: #FFFFFF;
+    color: $color-text;
     font-weight: 200;
     text-decoration: none;
     position: relative;
     z-index: 50;
 
     &--active {
-      border-bottom: 0.1rem solid $color-red;
-      font-weight: 900;
+
+      font-weight: $fw-bold;
     }
 
     @include media-breakpoint-down(md) {
-      color: white;
+      color: $color-text;
     }
 
     &:hover,
     &:active {
-      color: white !important;
+      color: $color-text !important;
 
       @include media-breakpoint-down(md) {
-        color: white !important;
+        color: $color-text !important;
       }
     }
   
