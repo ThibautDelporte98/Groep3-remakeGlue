@@ -1,0 +1,318 @@
+.c-cases {
+  position: relative;
+  color: $text-color;
+  margin: 3rem 0 0 0;
+  &__page {
+    font-weight: 600;
+  }
+  &__header {
+    text-align: center;
+    &--txt {
+      font-weight: 500;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+.title {
+  margin: 4rem 0 1rem 0;
+  color: $text-color;
+  font-weight: 700;
+}
+
+
+// .reverse {
+//   flex-direction: row-reverse;
+//   @include media-breakpoint-only("sm") {
+//     flex-direction: column;
+//   }
+  
+// }
+.c-work {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 1rem 1rem 0;
+  @include media-breakpoint-only("sm") {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__component{
+    display:block;
+    justify-content: space-around;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 22.65rem;
+    border-radius: 0.625rem;
+    object-fit: cover;
+  }
+  &__imgsecundairy {
+    display: block;
+    width: 100%;
+    height: 22.65rem;
+    border-radius: 0.625rem;
+    object-fit: cover;
+    &--reverse {
+      margin-left: 0;
+    }
+  }
+  &__company {
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    text-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.16);
+    @include media-breakpoint-only("sm") {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        
+      }
+    
+
+  }
+  &__companysec {
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    text-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.16);
+    @include media-breakpoint-only("sm") {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        
+      }
+    
+    &--reverse {
+      margin-left:2rem;
+    }
+  }
+  &__link {
+    position: relative;
+    width: 100%;
+    color: $text-color;
+    &:hover {
+      color: $text-color;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 16.7rem;
+    padding: 1rem;
+    background-color: rgba(52, 52, 52, 0.6);
+    width: 100%;
+    height: 6rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    font-size: 1.4rem;
+    @include media-breakpoint-only("md") {
+        text-align: center;
+        top: 60%;
+        height: 40%;
+      }
+    @include media-breakpoint-only("sm") {
+        text-align: center;
+        top: 50%;
+        height: 50%;
+  } 
+  }
+  &__overlaysec {
+    position: absolute;
+    top: 16.7rem;
+    padding: 1rem;
+    background-color: rgba(52, 52, 52, 0.6);
+    width: 100%;
+    height: 6rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    font-size: 1.4rem;
+    @include media-breakpoint-only("md") {
+        margin: 0;
+        text-align: center;
+        top: 60%;
+        height: 40%;
+      }
+      @include media-breakpoint-only("sm") {
+        text-align: center;
+        top: 50%;
+        height: 50%;
+    } 
+    &--reverse {
+      margin: 0;
+    }
+  }
+  &__overlaytxt {
+    margin: 0.5rem 0 0 0.5rem;
+    width: 65%;
+    line-height: 26px;
+    @include media-breakpoint-only("md") {
+        margin: 0;
+        width: 100%;
+      }
+    @include media-breakpoint-only("sm") {
+        margin: 0;
+        width: 100%;
+        font: size 28px;
+        line-height: 30px;
+      }
+  }
+  &__reverse{
+    flex-direction: row-reverse;
+    @include media-breakpoint-only("sm") {
+      flex-direction: column;
+    }
+  }
+}
+
+.c-wrone {
+  position: relative;
+  color: $text-color;
+  font-size: 3.75rem;
+  font-weight: 500;
+  padding: 2rem 0 2rem 0;
+  @include media-breakpoint-only("sm") {
+    font-size: 2rem;
+  }
+  &__qleft {
+    position: absolute;
+    top: 1rem;
+    left: 16.5rem;
+    color: #193ef2;
+    font-weight: 500;
+    font-size: 2rem;
+    @include media-breakpoint-only("sm") {
+        left: 10%;
+        font-size: 1.25rem;
+      }
+  }
+  &__qright {
+    position: absolute;
+    top: -1rem;
+    right: 15.5rem;
+    font-size: 2rem;
+    color: #193ef2;
+    margin: 2rem 2rem 2rem 2rem;
+    @include media-breakpoint-only("sm") {
+        right: 5%;
+        font-size: 1.25rem;
+      }
+  }
+}
+
+.c-button__more-cases {
+  width: 7rem;
+  height: 2.3rem;
+  margin: 1.5rem auto;
+  margin-bottom: 8rem;
+  border: none;
+  background-color: $button-background-color;
+  color: $text-color;
+  border-radius: 10px;
+  &:hover {
+    border: 2px solid $button-background-color;
+    background-color: #1d1d1d;
+    transition: 0.4s ease-in-out;
+  }
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 0.1em;
+}
+
+
+// Dit is voor de section "Enkele fiere klanten"
+
+
+.c-customers{
+    display: flex;
+    flex-direction: row;
+    // margin: 2rem 0 2rem 0; 
+    &__img{
+        display: block;
+        align-items: center;
+        height: 11.2625rem;
+        margin-right: 2rem;
+        @include media-breakpoint-only("md") {
+            &--6{
+                display: none;
+            }
+        }
+
+    }
+    &__link{
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+}
+.c-slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    &__up{
+    position:relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: purple;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, #0f40f4, #f512cc, #f62a14);
+    margin-left: 1.5rem;   
+    }
+    &__down{
+        position:relative;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: purple;
+        border-radius: 50%;
+        background-image: linear-gradient(to top, #0f40f4, #f512cc, #f62a14); 
+        margin-right: 1.5rem;  
+    }
+    &__position{
+        color:$text-color;
+        font-weight: 700;
+
+    }
+}
+.next {
+    position: absolute;
+    top: 0.3rem;
+    left: -1rem;
+  }
+  .previous {
+    position: absolute;
+    top: 0.3rem;
+    left:0.2rem;
+  }
+
+  .carousel {
+    margin-top: 50px;
+    &-inner{
+        height: 14rem;
+    }
+}
+// .carousel-inner {
+//     height:14rem;
+// }
+.carousel-caption {
+    top: 50%;
+}
+
+.carousel-caption{
+   display: block;
+   align-items: center;
+   left: 2%;
+   top: 50%;
+
+}
+
