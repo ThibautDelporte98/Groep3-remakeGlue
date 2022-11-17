@@ -27,11 +27,16 @@
 
     &__bolt {
         font-weight: 700;
-        border-bottom: 0.1rem solid #F62822;
+        border-bottom: 0.1rem solid $color-red;
     }
 
     &__img{
+            margin-bottom: -5.5rem;
+            @include media-breakpoint-down(xl){
+                margin-bottom: -2rem;
+            }
             @include media-breakpoint-down(lg) {
+                    margin-bottom: 0;
                     margin-left: -2rem;
                 }
     }
