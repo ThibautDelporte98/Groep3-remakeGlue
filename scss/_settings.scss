@@ -2,7 +2,7 @@
 
 
 $color-component-background:#343434;
-$color-text:white;
+$color-text: #FAFAFA;
 $color-white-background: #EFEFEF;
 $color-footer-light: #5E5E5E;
 $color-red:#F62822;
@@ -15,6 +15,12 @@ $fw-medium: 600;
 $fw-bold: 700;
 
 
-
-
-
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1700px
+);
