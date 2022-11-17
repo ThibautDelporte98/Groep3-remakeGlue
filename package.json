@@ -5,12 +5,13 @@
   "private": true, 
   "scripts": {
     "watch:sass": "sass scss/styles.scss dist/styles.css --no-source-map -w",
-    "compile:sass": "sass scss/styles.scss dist/styles.css --no-source-map --style compressed",
+    "compile:sass": "sass scss/styles.scss css/styles.css --no-source-map --style compressed",
     "devserver": "live-server",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/styles.css -o dist/styles.css",
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions'dist/styles.css -o dist/styles.css",
     "build:css": "npm-run-all compile:sass prefix:css",
-    "bundle:js": "webpack"
+    "bundle:js": "webpack",
+    "watch:js": "webpack --watch",
+    "start": "npm-run-all --parallel devserver watch:sass watch:js"
   },
   "repository": {
     "type": "git",

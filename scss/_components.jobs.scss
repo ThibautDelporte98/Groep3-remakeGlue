@@ -1,0 +1,143 @@
+.c-jobs{
+    font-weight: $fw-light;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    &__title{
+        font-size: 56px;
+        font-weight: $fw-bold;
+    }
+    &__subtitle{
+        font-size: 40px;
+        font-weight: $fw-bold;
+    }
+
+    &__header{
+        display: flex;
+        align-items: center;
+        padding-bottom: 3rem;
+        
+    }
+    &__block{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    &__jobelement{
+        background: $color-component-background;
+        border-radius: 20px;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        position: relative;
+        font-size: 38px;
+        &--red-dot{
+            height: 40px;
+            width: 40px;
+            background-color: $color-red;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 2rem;
+        }
+        &--blue-dot{
+            height: 40px;
+            width: 40px;
+            background-color: $color-blue;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 2rem;
+        }
+        &--pink-dot{
+            height: 40px;
+            width: 40px;
+            background-color: $color-pink;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 2rem;
+        }
+        &--red-line{
+            border-bottom: 3px solid $color-red;
+            width: 220px;
+            transform: rotate(-45deg);
+            left: 40%;
+            position: absolute;
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+            
+        }
+        &--blue-line{
+            border-bottom: 3px solid $color-blue;
+            width: 220px;
+            transform: rotate(-45deg);
+            left: 40%;
+            position: absolute;
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+            
+        }
+        &--pink-line{
+            border-bottom: 3px solid $color-pink;
+            width: 220px;
+            transform: rotate(-45deg);
+            left: 40%;
+            position: absolute;
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+            
+        }
+        &--button{
+            right: 0;
+            position:absolute;
+            margin-right: 3rem;
+            
+
+            &:active{
+                background-color: red;
+            }
+        }
+    }
+    &__description{
+        background-color: $color-white-background;
+        margin-top: -2rem;
+        padding: 2rem;
+        padding-top: 3rem;
+        border-radius: 1.25rem;
+        color: black;
+        &--title{
+            font-weight: $fw-regular;
+            font-size: 2rem;
+        }
+        &--tekst{
+            font-weight: $fw-light;
+            font-size: 1rem;
+            ul{
+                text-decoration: none;
+                list-style-type: none
+                
+            }
+            li{
+                display: grid;
+                grid-template-columns: 20px auto;
+                justify-content: start;
+                align-items: center;
+            }
+            li::before{
+                content: ">";
+                font-size: 30px;
+                color: $color-red;
+            }
+        }
+    }
+}
+.u-hidden{
+    display:none;
+    transition: 0.5s;
+    
+}
+.u-active--button{
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
