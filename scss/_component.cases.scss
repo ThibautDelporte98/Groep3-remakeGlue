@@ -1,6 +1,6 @@
 .c-cases {
   position: relative;
-  color: $text-color;
+  color: $color-text;
   margin: 3rem 0 0 0;
   &__page {
     font-weight: 600;
@@ -17,7 +17,7 @@
 
 .title {
   margin: 4rem 0 1rem 0;
-  color: $text-color;
+  color: $color-text;
   font-weight: 700;
 }
 
@@ -33,7 +33,8 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  margin: 1rem 1rem 1rem 0;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
   @include media-breakpoint-only("sm") {
     display: flex;
     flex-direction: column;
@@ -100,9 +101,9 @@
   &__link {
     position: relative;
     width: 100%;
-    color: $text-color;
+    color: $color-text;
     &:hover {
-      color: $text-color;
+      color: $color-text;
     }
   }
   &__overlay {
@@ -153,6 +154,10 @@
     margin: 0.5rem 0 0 0.5rem;
     width: 65%;
     line-height: 26px;
+    @include media-breakpoint-only("lg") {
+      margin: 0;
+      width: 100%;
+    }
     @include media-breakpoint-only("md") {
         margin: 0;
         width: 100%;
@@ -160,7 +165,7 @@
     @include media-breakpoint-only("sm") {
         margin: 0;
         width: 100%;
-        font: size 28px;
+        font-size: 28px;
         line-height: 30px;
       }
   }
@@ -174,34 +179,56 @@
 
 .c-wrone {
   position: relative;
-  color: $text-color;
+  color: $color-text;
   font-size: 3.75rem;
   font-weight: 500;
   padding: 2rem 0 2rem 0;
   @include media-breakpoint-only("sm") {
     font-size: 2rem;
   }
+  @include media-breakpoint-only("md") {
+    font-size: 3rem;
+  }
+  @include media-breakpoint-only("lg") {
+    font-size: 3.5rem;
+  }
   &__qleft {
     position: absolute;
     top: 1rem;
-    left: 16.5rem;
+    left: 15rem;
     color: #193ef2;
     font-weight: 500;
     font-size: 2rem;
     @include media-breakpoint-only("sm") {
-        left: 10%;
+        left: 3rem;
+        font-size: 1.25rem;
+      }
+      @include media-breakpoint-only("md") {
+        left: 2rem;
+        font-size: 1.25rem;
+      }
+      @include media-breakpoint-only("lg") {
+        left: 6rem;
         font-size: 1.25rem;
       }
   }
   &__qright {
     position: absolute;
     top: -1rem;
-    right: 15.5rem;
+    right: 14rem;
     font-size: 2rem;
     color: #193ef2;
     margin: 2rem 2rem 2rem 2rem;
     @include media-breakpoint-only("sm") {
-        right: 5%;
+        right: 1rem;
+        font-size: 1.25rem;
+      }
+      @include media-breakpoint-only("md") {
+        right: 0;
+        font-size: 1.25rem;
+      }
+      @include media-breakpoint-only("lg") {
+        right: 4rem;
         font-size: 1.25rem;
       }
   }
@@ -211,13 +238,13 @@
   width: 7rem;
   height: 2.3rem;
   margin: 1.5rem auto;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   border: none;
-  background-color: $button-background-color;
-  color: $text-color;
+  background-color: $color-red;
+  color: $color-text;
   border-radius: 10px;
   &:hover {
-    border: 2px solid $button-background-color;
+    border: 2px solid $color-red;
     background-color: #1d1d1d;
     transition: 0.4s ease-in-out;
   }
@@ -279,7 +306,7 @@
         margin-right: 1.5rem;  
     }
     &__position{
-        color:$text-color;
+        color:$color-text;
         font-weight: 700;
 
     }
@@ -296,7 +323,6 @@
   }
 
   .carousel {
-    margin-top: 50px;
     &-inner{
         height: 14rem;
     }
@@ -315,4 +341,242 @@
    top: 50%;
 
 }
+
+
+// Dit is voor Daag ons uit
+
+.title-large {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 0.2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  color: white;
+  margin-bottom: 2rem;
+  &::before {
+    content: " ";
+    display: flex;
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    background: $color-component-background;
+    top: 50%;
+    left: 0;
+    @include media-breakpoint-down("xl") {
+      width: 25%;
+    }
+    @include media-breakpoint-only("md") {
+      width: 20%;
+    }
+    @include media-breakpoint-only("sm") {
+      width: 0%;
+    }
+    @include media-breakpoint-only("xs") {
+      width: 0%;
+    }
+  }
+  &::after {
+    content: " ";
+    display: flex;
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    background: $color-component-background;
+    top: 50%;
+    right: 0;
+    @include media-breakpoint-down("xl") {
+      width: 25%;
+    }
+    @include media-breakpoint-only("md") {
+      width: 20%;
+    }
+    @include media-breakpoint-only("sm") {
+      width: 0;
+    }
+    @include media-breakpoint-only("xs") {
+      width: 0%;
+    }
+  }
+}
+
+.c-contact {
+position: relative;
+  display: block;
+  align-items: center;
+  color: $color-text;
+  background-color: #343434;
+  padding: 3rem 3rem 1rem 3rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  &__subtitle{
+    font-weight: 600;
+  }
+  &__txt {
+    font-weight: 300;
+    margin-top: 1rem;
+    width: 63%;
+  }
+  &__button{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    &--gradient{
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: purple;
+        border-radius: 50%;
+        background-image: linear-gradient(to top, #0f40f4, #f512cc, #f62a14);
+    }   &--txt{
+        position: relative;
+        bottom: 0;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+   }
+   
+    @include media-breakpoint-only("xl") {
+      bottom: 0;
+      left: 8%;
+    }
+    @include media-breakpoint-only("lg") {
+      bottom: -0.5rem;
+      left: 87%;
+    }
+
+    @include media-breakpoint-only("sm") {
+      bottom: 0;
+      left: 87%;
+    }
+    @include media-breakpoint-only("xs") {
+      bottom: 0;
+      left: 87%;
+    }
+
+  }
+}
+.title-large {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 0.2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  &::before {
+    content: " ";
+    display: flex;
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    background: $color-component-background;
+    top: 50%;
+    left: 0;
+    @include media-breakpoint-down("xl") {
+      width: 25%;
+    }
+    @include media-breakpoint-only("md") {
+      width: 20%;
+    }
+    @include media-breakpoint-only("sm") {
+      width: 0%;
+    }
+    @include media-breakpoint-only("xs") {
+      width: 0%;
+    }
+  }
+  &::after {
+    content: " ";
+    display: flex;
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    background: $color-component-background;
+    top: 50%;
+    right: 0;
+    @include media-breakpoint-down("xl") {
+      width: 25%;
+    }
+    @include media-breakpoint-only("md") {
+      width: 20%;
+    }
+    @include media-breakpoint-only("sm") {
+      width: 0;
+    }
+    @include media-breakpoint-only("xs") {
+      width: 0%;
+    }
+  }
+}
+
+.c-contact {
+position: relative;
+  display: block;
+  align-items: center;
+  color: $color-text;
+  background-color: #343434;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  @include media-breakpoint-only("sm") {
+    padding-bottom: 5rem;
+  }
+  @include media-breakpoint-only("xs") {
+    padding-bottom: 5rem;
+  }
+  &__subtitle{
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  &__txt {
+    font-weight: 300;
+    margin-top: 2rem;
+    width: 63%;
+  }
+  &__button{    
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 80%;
+    bottom: 1rem;
+    &--gradient{
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-image: linear-gradient(to top, #0f40f4, #f512cc, #f62a14);
+    }   &--txt{
+        position: relative;
+        font-size: 1.2rem;
+        color: $color-text;
+        text-decoration: none;
+        margin-left: 2.5rem;
+   }
+
+    @include media-breakpoint-only("xl") {
+        left: 77%;
+    }
+    @include media-breakpoint-only("lg") {
+        left: 75%;
+    }
+    @include media-breakpoint-only("md") {
+      left: 65%;
+    }
+    @include media-breakpoint-only("sm") {
+      left: 55%;
+    }
+    @include media-breakpoint-only("xs") {
+      left: 3rem;
+    }
+
+  }
+
+}
+
 
