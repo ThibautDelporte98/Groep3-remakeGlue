@@ -1,4 +1,5 @@
 const path = require('path'); 
+
 module.exports = { 
     mode: 'production', 
     entry: ['./js/navscroll.js', './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'], 
@@ -6,4 +7,7 @@ module.exports = {
         filename: 'main.js', 
         path: path.resolve(__dirname, 'dist'), 
     }, 
+
+
 };
+
