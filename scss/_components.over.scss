@@ -30,7 +30,7 @@
 
         @include media-breakpoint-down(lg) {
             margin-left: 0rem;
-            border-radius: 0;
+            border-radius: 1.5rem 1.5rem 0 0;
             padding-top: 2rem;
             padding-bottom: 2rem;
             padding-left: 2rem;
@@ -59,7 +59,7 @@
         }
 
         @include media-breakpoint-down(lg) {
-            border-radius: 0rem;
+            border-radius: 1.5rem 1.5rem 0 0;
             padding-top: 2rem;
             padding-bottom: 2rem;
             padding-left: 2rem;
@@ -88,7 +88,7 @@
         }
 
         @include media-breakpoint-down(lg) {
-            border-radius: 0rem;
+            border-radius: 1.5rem 1.5rem 0 0;
             padding-top: 2rem;
             padding-bottom: 2rem;
             padding-left: 2rem;
@@ -118,7 +118,7 @@
 
         @include media-breakpoint-down(lg) {
              margin-right: 0;
-            border-radius: 0;
+            border-radius: 1.5rem 1.5rem 0 0;
             padding-top: 2rem;
             padding-bottom: 2rem;
             padding-left: 2rem;
@@ -225,4 +225,8 @@
 .blue {
     text-decoration: underline;
     text-decoration-color: $color-blue;
+}
+
+.margin{
+    margin-bottom: 4rem;
 }
