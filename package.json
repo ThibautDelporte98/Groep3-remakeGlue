@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Groepswerk 2022",
   "private": true, 
+
   "scripts": {
     "watch:sass": "sass scss/styles.scss dist/styles.css --no-source-map -w",
     "compile:sass": "sass scss/styles.scss css/styles.css --no-source-map --style compressed",

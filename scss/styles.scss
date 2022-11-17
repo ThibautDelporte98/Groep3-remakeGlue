@@ -1,8 +1,8 @@
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "settings";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "component.footer";
 @import "component.getuigenissen";
+@import "component.cases";
 @import "elements";
 @import "components.logo";
 @import "components.nav";
@@ -11,4 +11,5 @@
 @import "components.btn";
 @import "components.header-over";
 @import "components.jobs";
+@import "components.over";
 
