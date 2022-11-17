@@ -3,7 +3,7 @@
     font-size: 0.9rem;
     &__nav--title{
         font-size: 0.9rem;
-        font-weight: 700;
+        font-weight: $fw-medium;
         margin-top: 5rem;
         color: $color-text;
     }
@@ -12,6 +12,9 @@
         flex-direction: column;
         text-decoration: none;
         color: $color-text;
+        &:hover{
+            color: $color-red;
+        }
     }
     &__input{
         width: 27rem;
@@ -33,11 +36,11 @@
         margin-top: 5rem;
 
     }&__nav--instagram{
-        color: white;
+        color: $color-text;
         margin-right: 0.2rem;
         text-decoration: none;
     }&__nav--facebook{
-        color: white;
+        color: $color-text;
     }
     &__copyright{
         margin-top: 3.5rem;
@@ -48,7 +51,7 @@
     }
     &__adress{
         text-align: center;
-        color: gray;
+        color: $color-footer-light;
         font-size: 12px;
     }&__button{
         margin-top: 7.13rem;
@@ -58,8 +61,9 @@
         border: none;
         background-color:$color-red ;
         color: $color-text;
+        transition: .3s;
         &:hover{
-            border-color: red;
+            border-color: $color-red;
             background-color: $color-component-background;
             transform:2s ease ;
         }
@@ -81,7 +85,7 @@
     font-size: 0.9rem;
     &__nav--title{
         font-size: 0.9rem;
-        font-weight: 700;
+        font-weight: $fw-medium;
         margin-top: 5rem;
     }
     &__nav--link{
@@ -110,11 +114,11 @@
         margin-top: 5rem;
 
     }&__nav--instagram{
-        color: white;
+        color: $color-text;
         margin-right: 0.2rem;
         text-decoration: none;
     }&__nav--facebook{
-        color: white;
+        color: $color-text;
     }
     &__copyright{
         margin-top: 3.5rem;
@@ -125,7 +129,7 @@
     }
     &__adress{
         text-align: center;
-        color: gray;
+        color: $color-footer-light;
         font-size: 12px;
     }&__button{
         margin-top: 7.13rem;
@@ -136,7 +140,7 @@
         background-color:$color-red;
         color: $color-text;
         &:hover{
-            border-color: red;
+            border-color: $color-red;
             background-color: $color-component-background;
             transform:2s ease ;
         }

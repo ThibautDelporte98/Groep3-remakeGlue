@@ -21,12 +21,12 @@
     }
 
     &__text {
-        font-weight: 300;
+        font-weight: $fw-light;
         font-size: 1.2rem;
     }
 
     &__bolt {
-        font-weight: 700;
+        font-weight: $fw-medium;
         border-bottom: 0.1rem solid $color-red;
     }
 

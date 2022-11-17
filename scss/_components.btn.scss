@@ -27,9 +27,9 @@
     position: relative;
     font-size: 1.2rem;
     line-height: 18px;
-    font-weight: 300;
+    font-weight: $fw-light;
     vertical-align: middle;
-    color: white;
+    color: $color-text;
 }
 
 &__svg {
@@ -39,7 +39,7 @@
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: #FFFFFF;
+    stroke: $color-text;
     stroke-width: 1;
     transform: translateX(-5px);
     transition: all 0.3s ease;

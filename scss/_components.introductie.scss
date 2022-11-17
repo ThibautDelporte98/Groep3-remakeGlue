@@ -35,7 +35,7 @@
     }
     &__subtitel{
         font-size: 40px;
-        font-weight: bold;
+        font-weight: $fw-bold;
         padding-bottom: 1.5rem;
         padding-top: 2.5rem;
     }
@@ -43,13 +43,13 @@
         padding-left: 3rem;
         padding-right: 15rem;
         padding-bottom: 1.5rem;
-        font-weight: lighter;
+        font-weight: $fw-light;
         @include media-breakpoint-down(xl) {
             padding-right: 3rem;
             
           }
         &--accent{
-            font-weight: bold;
+            font-weight: $fw-medium;
             text-decoration: underline;
             text-decoration-color: $color-red;
         }

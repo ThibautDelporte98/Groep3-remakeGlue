@@ -30,13 +30,13 @@
     }
 
     &__text {
-        font-weight: 300;
+        font-weight: $fw-light;
         font-size: 1.2rem;
         margin-bottom: 3rem;
     }
 
     &__bolt {
-        font-weight: 700;
-        border-bottom: 0.1rem solid #F62822;
+        font-weight: $fw-medium;
+        border-bottom: 0.1rem solid $color-red;
     }
 }
