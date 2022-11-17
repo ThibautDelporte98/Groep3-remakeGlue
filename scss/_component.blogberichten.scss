@@ -1,0 +1,59 @@
+.c-blogberichten{
+    position: relative;
+    justify-content: center;
+    margin-bottom: 3rem;
+    
+
+    &__gradient{
+        background: linear-gradient(90deg, rgba(246, 40, 34, 1) 0%, rgba(245, 27, 203, 1) 52%, rgba(25, 62, 242, 1) 100%);
+        width: 100%;
+        height: 15rem;
+        border-radius: 1.25rem;
+        margin-top: -1rem;
+        margin-bottom: 6rem;
+
+    }
+    &__img{
+        height: 26rem;
+        width: 100%;
+    }
+    &__tekst{
+        background-color: $color-white-background;
+        width: 88%;
+        height: 15rem;
+        margin-top: -16rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        border-radius: 20px;
+        position: relative;
+        top: -25%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        &__subtitel{
+            color: $color-pink;
+            font-weight: $fw-light;
+            padding-left: 3rem;
+            padding-top: 3rem;
+        }
+        &__titel{
+            padding-left: 3rem;
+            font-weight: $fw-medium;
+            font-size: 1.3rem;
+            color: $color-component-background;
+        }
+        &__uitleg{
+            color: $color-footer-light;
+            padding-left: 3rem;
+        }
+        &__btn{
+            
+            &__tekst{
+                color: black !important;
+                text-decoration: none;
+                z-index: 10;
+
+            }
+        }
+    }
+}
